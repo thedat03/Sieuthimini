@@ -1,0 +1,170 @@
+/* Reset một số phần tử mặc định */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f7f8fa;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.intro-section {
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product-image {
+    width: 552px; /* Cố định độ rộng của ảnh */
+    height: 552px; /* Cố định chiều cao của ảnh */
+    object-fit: cover; /* Cắt ảnh để phù hợp với khung mà không bị méo */
+    border-radius: 5px; /* Bo tròn góc ảnh */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng đổ bóng */
+}
+
+.thumbnail-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.thumbnail-item {
+    flex: 0 0 auto;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.thumbnail-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.thumbnail-item.active {
+    border-color: #007bff;
+}
+
+.product-details {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-details h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.product-actions button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.product-actions .btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.product-actions .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.product-actions .btn-success {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+.product-actions .btn-success:hover {
+    background-color: #218838;
+}
+
+.product-quantity {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.product-quantity .border-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.product-quantity button {
+    background-color: #f8f9fa;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.product-quantity button:hover {
+    background-color: #e2e6ea;
+}
+
+.product-quantity input {
+    width: 50px;
+    text-align: center;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.product-quantity input:focus {
+    background-color: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+    .product-details {
+        padding: 15px;
+    }
+
+    .product-details h2 {
+        font-size: 20px;
+    }
+
+    .thumbnail-item {
+        width: 60px;
+        height: 60px;
+    }
+}

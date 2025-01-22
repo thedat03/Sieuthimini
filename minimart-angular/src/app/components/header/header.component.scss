@@ -1,0 +1,106 @@
+@import '../../styles/shared-styles.scss';
+
+/* Header Styling */
+header {
+    background-color: #333333; /* Màu nền tối */
+    color: #ffffff; /* Màu chữ trắng */
+    padding: 10px 0;
+}
+
+.navbar {
+    background-color: #333333 !important; /* Màu nền tối */
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand svg {
+    margin-right: 10px;
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%; /* Làm tròn logo */
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar .navbar-nav .nav-item {
+    margin: 0 5px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #ffffff !important; /* Màu chữ trắng */
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s; /* Hiệu ứng hover */
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    background-color: #FF5722; /* Màu nền khi hover */
+    color: #ffffff !important;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    background-color: #FF5722; /* Màu nền cho tab active */
+    color: #ffffff !important;
+}
+
+.navbar .navbar-nav .icon {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+/* Popover Styling */
+.popover-list {
+    padding: 10px;
+    background-color: #f9f9f9; /* Nền sáng */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.popover-item {
+    display: block;
+    padding: 8px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.popover-item:hover {
+    background-color: #FF5722;
+    color: #ffffff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+}

@@ -1,0 +1,138 @@
+/* Toàn bộ container chính */
+.container {
+    color: #333; /* Màu chữ tối, dễ nhìn */
+    background-color: #f9f9f9; /* Màu nền sáng */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Khu vực xác nhận thông tin */
+.confirmation-container {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 600px;            
+    border-radius: 10px;
+    background-color: #ffffff; /* Màu nền trắng */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bóng mềm để tạo độ nổi */
+}
+
+/* Thông tin sản phẩm */
+.product-info {
+    display: flex;
+    align-items: center;
+}
+
+.product-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 1px solid #ddd; /* Đường viền nhẹ để nổi bật */
+}
+
+.product-name {
+    color: #333; /* Màu chữ tối */
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Bảng thông tin sản phẩm */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    border-collapse: collapse;
+    background-color: #fff; /* Nền trắng */
+    overflow: hidden; /* Bo tròn các góc */
+    border: 1px solid #ddd; /* Đường viền nhạt */
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee; /* Đường phân cách các dòng */
+    color: #333; /* Màu chữ chính */
+}
+
+th {
+    background-color: #f0f0f0; /* Nền tiêu đề bảng */
+    font-weight: bold;
+}
+
+td {
+    background-color: #fff;
+}
+
+tr:last-child td {
+    border-bottom: none; /* Xóa đường kẻ ở dòng cuối */
+}
+
+/* Tổng giá hiển thị */
+.header-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #444; /* Màu nhấn tối hơn */
+    text-align: right;
+}
+
+/* Nút xác nhận hoặc thao tác */
+.btn-gradient {
+    background: linear-gradient(to right, #4caf50, #2e7d32); /* Hiệu ứng gradient xanh lá */
+    color: white; /* Màu chữ trắng cho nút */
+    border-radius: 30px;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(to right, #66bb6a, #43a047); /* Gradient khi hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Tạo hiệu ứng nổi */
+}
+
+/* Tiêu đề các khu vực */
+.product-header,
+.product-order {
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #4caf50; /* Đường viền nhấn dưới tiêu đề */
+    display: inline-block;
+}
+
+/* Thẻ <p> trong các khu vực thông tin */
+.form-label {
+    font-size: 16px;
+    color: #444;
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+/* Điều chỉnh thêm cho màn hình nhỏ */
+@media (max-width: 768px) {
+    .product-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-image {
+        margin-bottom: 10px;
+    }
+
+    th,
+    td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .btn-gradient {
+        width: 100%;
+    }
+}
