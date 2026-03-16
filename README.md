@@ -129,7 +129,7 @@ Stores orders
 
 Clone repository
 
-''' bash git clone https://github.com/thedat03/Sieuthimini.git ''''
+```bash git clone https://github.com/thedat03/Sieuthimini.git ```
 
 cd Sieuthimini
 
@@ -141,7 +141,7 @@ mvn spring-boot:run
 
 Backend runs at:
 
-'''bash http://localhost:8080 '''
+```bash http://localhost:8080 ```
 
 Run Frontend
 
@@ -153,7 +153,7 @@ npm start
 
 Frontend runs at:
 
-'''bash http://localhost:4200 '''
+```bash http://localhost:4200 ```
 
 # 📷 Screenshots
 Homepage
