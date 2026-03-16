@@ -1,224 +1,189 @@
-🚀 Online Programming Learning Platform
+# 🛒 Mini Supermarket Website
 
-A full-stack web platform designed to help learners study programming through courses, coding practice, and progress tracking.
+A web-based management and shopping system designed for mini supermarkets.
+The platform allows customers to browse products, add items to the cart, place orders, and track order status, while administrators can manage products, categories, and orders efficiently.
 
-The system integrates an online coding environment, automatic code grading, and AI-powered feedback to enhance the programming learning experience.
+This project was developed as part of a university coursework project at Hanoi University of Science and Technology.
 
-📌 Introduction
+# 📌 Introduction
 
-Programming has become an essential skill in the modern digital world. However, many learners face difficulties when theory and practical coding environments are separated.
+In modern retail businesses, digital transformation plays an important role in improving operational efficiency and customer experience. Traditional mini supermarkets often face challenges in managing inventory, orders, and customer interactions.
 
-This project develops an online programming learning platform that connects the entire learning workflow, including:
+This project proposes a web-based supermarket management system that helps automate these processes and supports both online shopping and product management.
 
-Learning through video lectures and documents
+The system provides a convenient shopping platform for customers and a powerful management interface for administrators.
 
-Practicing coding exercises directly in the browser
-
-Automatic grading using predefined test cases
-
-Tracking learning progress for each learner
-
-The platform provides a unified system that helps learners improve their programming skills more effectively.
-
-🛠 Tech Stack
+# 🛠 Tech Stack
 Frontend
 
-ReactJS
+Angular
 
-TailwindCSS
+TypeScript
 
-Axios
+HTML / CSS
 
 Backend
 
 Spring Boot
 
-Spring Security
-
-JWT Authentication
-
 RESTful API
+
+Hibernate / JPA
 
 Database
 
 MySQL
 
-External Services
+XAMPP
 
-Judge0 API (Code execution and grading)
+The system follows an MVC architecture combined with RESTful APIs, where Angular handles the user interface and Spring Boot processes business logic.
 
-Gemini API (AI-powered feedback)
+# ✨ Features
+## 👤 Customer
 
-✨ Features
-👨‍🎓 Learner (Student)
+Customers can:
 
 Register and login
 
-Browse programming courses
+Search products
 
-Watch lecture videos
+View product details
 
-Read learning materials
+Add products to cart
 
-Take quizzes and exams
+Manage shopping cart
 
-Practice coding exercises
+Place orders
 
-Submit code and receive automatic grading
+Track order status
 
-View AI-generated feedback
+These features allow users to complete the entire purchasing process online.
 
-Track learning progress
+## 🛠 Admin
 
-👨‍🏫 Teacher
+Administrators can:
 
-Create and manage programming courses
+Manage product categories
 
-Organize course modules and lessons
+Add, edit, and delete products
 
-Upload lecture videos and learning materials
+View and process orders
 
-Create quizzes and coding exercises
+Update order status
 
-Define test cases for automatic grading
+Manage product information
 
-Submit courses for admin approval
+This helps store managers control inventory and handle customer orders efficiently.
 
-🧑‍💻 Teaching Assistant
+# 🗄 Database
 
-Monitor student learning progress
+Main tables used in the system:
 
-Answer student questions
+Table	Description
+Users	Stores user information
+Roles	Stores user roles
+Products	Stores product information
+Categories	Stores product categories
+Orders	Stores customer orders
+Order_Details	Stores detailed order items
+Product_Images	Stores product images
 
-Provide guidance and reminders
+These tables support core operations such as product management, order tracking, and user management.
 
-Support teachers in managing courses
+# 🏗 System Architecture
 
-👨‍💼 Admin
+The system is designed using a three-layer architecture:
 
-Manage users and roles
-
-Approve or reject courses created by teachers
-
-Assign teaching assistants to courses
-
-Manage system operations and content
-
-👥 User Roles
-Role	Description
-Learner	Participate in courses and practice programming
-Teacher	Create and manage courses
-Teaching Assistant	Support learners and monitor progress
-Admin	Manage users, courses, and system operations
-🏗 System Architecture
-
-The system follows a Client–Server architecture using RESTful APIs.
-
-Frontend (ReactJS)
+Frontend (Angular)
         ↓
 REST API
         ↓
 Backend (Spring Boot)
         ↓
 Database (MySQL)
-        ↓
-External Services (Judge0 API / Gemini API)
-Architecture Overview
+Frontend
 
-Frontend handles user interface and user interaction
+Displays product lists
 
-Backend processes business logic and APIs
+Handles user interactions
 
-Database stores users, courses, and learning progress
+Sends API requests to backend
 
-Judge0 API executes code in isolated environments
+Backend
 
-Gemini API generates AI-powered feedback for learners
+Handles business logic
 
-⚙️ Installation
-1️⃣ Clone the repository
-git clone https://github.com/yourusername/programming-learning-platform.git
-2️⃣ Backend setup
+Processes orders
+
+Manages product data
+
+Database
+
+Stores products
+
+Stores users
+
+Stores orders
+
+# ⚙️ Installation
+
+Clone repository
+
+''' bash git clone https://github.com/thedat03/Sieuthimini.git ''''
+
+cd Sieuthimini
+
+Run Backend
+
 cd backend
+
 mvn spring-boot:run
 
-Backend runs on:
+Backend runs at:
 
-http://localhost:8080
-3️⃣ Frontend setup
+'''bash http://localhost:8080 '''
+
+Run Frontend
+
 cd frontend
+
 npm install
+
 npm start
 
-Frontend runs on:
+Frontend runs at:
 
-http://localhost:3000
-🗄 Database
+'''bash http://localhost:4200 '''
 
-Import the provided SQL file into MySQL.
+# 📷 Screenshots
+Homepage
 
-Main database tables include:
+Displays product list and categories.
 
-Users
+Product Detail Page
 
-Courses
+Shows product description, price, and images.
 
-Modules
+Shopping Cart
 
-Lessons
+Allows users to manage selected products.
 
-Quizzes
+Admin Dashboard
 
-Coding Exercises
+Admin can manage products, categories, and orders.
 
-Learning Progress
+# 📈 Future Improvements
 
-Payments
+Possible improvements include:
 
-📷 Screenshots
-Course Listing Page
+Integrating online payment (VNPay, MoMo)
 
-Displays available programming courses for learners.
+Product recommendation system
 
-Coding Practice Interface
+Customer reviews and ratings
 
-Learners can write and run code directly in the browser and submit solutions to test against predefined test cases.
+Live chat support
 
-Student Progress Tracking
+Cloud deployment (AWS, Azure)
 
-Teaching assistants can monitor learner progress and provide timely support.
-
-🔐 Security
-
-The system implements several security mechanisms:
-
-JWT Authentication
-
-Role-Based Access Control (RBAC)
-
-Secure API endpoints
-
-Input validation
-
-📈 Future Improvements
-
-Possible future improvements include:
-
-Mobile application support
-
-AI-based course recommendations
-
-Real-time collaborative coding
-
-More programming language support
-
-System performance optimization and scaling
-
-👨‍💻 Author
-
-Nguyễn Thế Đạt
-Hanoi University of Science and Technology
-
-⭐ Project Purpose
-
-This project was developed as a graduation thesis to explore the design and implementation of an integrated online programming learning platform.
+These enhancements will improve scalability and user experience.
